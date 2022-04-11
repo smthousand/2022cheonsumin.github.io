@@ -1,0 +1,110 @@
+/* header */
+/* header__gradient */
+.header__gradient {
+  position: relative;
+  background:
+    linear-gradient(217deg, rgba(90, 69, 244, 1), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(242, 127, 70, 1), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(255, 40, 18, 1), rgba(0, 0, 255, 0) 70.71%);
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* header__contact */
+.header__contact {
+  margin-top: -87px;
+}
+
+.header__contact .row {
+  position: relative;
+}
+
+.header__contact-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+/* main */
+.textbox {
+  padding: 15px 15px 15px 18px;
+  margin: 10px 0 30px 0;
+  background: #f1f2f3;
+  border-left:3px solid #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 100px;
+  }
+}
+
+/*common*/
+h1 {font-size: 2.5em;font-weight: bold;}
+h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+.text-info span {font-size: 9px;}
+.header__icons {
+  font-size: 13px;
+}
+
+.dropdown-toggle::after {
+  margin-left: 20px;
+}
