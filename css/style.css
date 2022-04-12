@@ -11,7 +11,7 @@
 .waves {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 200px;
 }
 
 .parallax>use {
@@ -50,7 +50,7 @@
 
 /* header__contact */
 .header__contact {
-  margin-top: -87px;
+  margin-top: -100px;
 }
 
 .header__contact .row {
@@ -67,20 +67,90 @@
 /* main */
 .textbox {
   padding: 15px 15px 15px 18px;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 25px 0;
   background: #f1f2f3;
-  border-left:3px solid #333;
+  border-left: 3px solid #333;
 }
 
+/* history */
+.main__history .row {
+  grid-row-gap: 20px;
+}
 
+.main__history-card {
+  border-radius: 5px;
+  border: 1px solid #707070;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
 
+.main__history-card>h3 {
+  padding: 8px 15px;
+}
 
+.main__history-card-content {
+  border-top: 1px solid #707070;
+  padding: 13px 20px;
+}
 
+.main__history-card-content-logo {
 
+  height: 50px;
+  float: left;
+  width: 50px;
+  min-width: 15px;
+  margin: 0 15px 30px 0;
 
+}
 
+.main__history-card:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
+.main__history-card-content-logo img {
+  width: 100%;
+  object-fit: scale-down;
+}
 
+li {background:url(../images/li.png) no-repeat center left; padding: 0 0 5px 10px;}
+.badge {font-weight: normal;font-size: 1em;margin: 0 3px 6px 3px;}
+.badge-photoshop {
+  color: #2550C7;
+  background-color: #F2F4F9;
+}
+.badge-illustrator {
+  color: #C78125;
+  background-color: #F9F5F2;
+}
+.badge-html {
+  color: #C74C25;
+  background-color: #F9F2F2;
+}
+.badge-css {
+  color: #2581C7;
+  background-color: #F2F7F9;
+}
+.badge-javascript {
+  color: #C7A725;
+  background-color: #F9F8F2;
+}
+.badge-react {
+  color: #25C7C7;
+  background-color: #F2F9F9;
+}
+.badge-nodejs {
+  color: #25C760;
+  background-color: #F2F9F5;
+}
+.badge-bootstrap {
+  color: #8C25C7;
+  background-color: #F7F2F9;
+}
+.badge-excel {
+  color: #30C725;
+  background-color: #F2F9F2;
+}
 
 
 /*Shrinking for mobile*/
@@ -91,7 +161,11 @@
 }
 
 /*common*/
-h1 {font-size: 2.5em;font-weight: bold;}
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
 h2 {
   font-size: 1.6em;
   font-weight: bold;
@@ -100,7 +174,11 @@ h2 {
 h3 {
   font-size: 1.25em;
 }
-.text-info span {font-size: 9px;}
+
+.text-info span {
+  font-size: 9px;
+}
+
 .header__icons {
   font-size: 13px;
 }
