@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body>
@@ -46,7 +47,7 @@
         <div class="header__contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-auto mr-auto header__contact-img">
+                    <div class="col-auto mr-auto">
                         <img src="images/mememe.png" alt="" style="width: 150px;">
                     </div>
                     <div class="col-auto header__contact-btn">
@@ -199,21 +200,23 @@
             <div class="row mb-5">
                 <div class="main__license col-12 col-sm-6">
                     <h1 class="mb-3">License</h1>
-                    <ul>
+                    <ul class="main__license-list">
                         <li>웹 디자인 기능사</li>
                     </ul>
                 </div>
-                <div class="main__skils col-12 col-sm-6">
+                <div class="main__skills col-12 col-sm-6">
                     <h1 class="mb-3">Skills</h1>
-                    <p class="badge badge-photoshop">Photoshop</p>
-                    <p class="badge badge-illustrator">Illustrator</p>
-                    <p class="badge badge-html">HTML</p>
-                    <p class="badge badge-css">CSS</p>
-                    <p class="badge badge-javascript">JavaScript</p>
-                    <p class="badge badge-react">React</p>
-                    <p class="badge badge-nodejs">Node.js</p>
-                    <p class="badge badge-bootstrap">Bootstrap</p>
-                    <p class="badge badge-excel">Excel</p>
+                    <div class="main__skills-badge">
+                        <p class="badge badge-photoshop">Photoshop</p>
+                        <p class="badge badge-illustrator">Illustrator</p>
+                        <p class="badge badge-html">HTML</p>
+                        <p class="badge badge-css">CSS</p>
+                        <p class="badge badge-javascript">JavaScript</p>
+                        <p class="badge badge-bootstrap">Bootstrap</p>
+                        <p class="badge badge-excel">Excel</p>
+                        <p class="badge badge-react">React</p>
+                        <p class="badge badge-nodejs">Node.js</p>
+                    </div>
                 </div>
             </div>
 
@@ -222,27 +225,88 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="images/slide01.jpg">
-                            <h2 class="mt-2 mb-1">🖥 홍익대학교 홈페이지 시안 디자인 (2019)</h2>
+                            <a class="mobile-click d-block d-md-none"
+                                href="https://smthousand.github.io/2022cheonsumin.github.io/images/slide01.jpg"
+                                target="_blank">
+                                <p class="mobile-click-box"><span class="material-icons">
+                                        open_in_new
+                                    </span></p>
+                            </a>
+                            <h2 class="mt-2 mb-1">🖥홍익대학교 홈페이지 메인/서브 디자인 (2019)</h2>
                             <p class="badge badge-photoshop">Photoshop</p>
-                            <div class="textbox">기업형 홈페이지 디자인 </div>
+                            <div class="textbox">기업형 홈페이지 디자인 레이아웃</div>
                         </div>
                         <div class="swiper-slide"><img src="images/slide02.jpg">
-                            <h2 class="mt-2 mb-1">🖥 동의대학교 홈페이지 시안 디자인 (2019)</h2>
+                            <a class="mobile-click d-block d-md-none"
+                                href="https://smthousand.github.io/2022cheonsumin.github.io/images/slide02.jpg"
+                                target="_blank">
+                                <p class="mobile-click-box"><span class="material-icons">
+                                        open_in_new
+                                    </span></p>
+                            </a>
+                            <h2 class="mt-2 mb-1">🖥 동의대학교 홈페이지 메인 디자인 (2019)</h2>
                             <p class="badge badge-photoshop">Photoshop</p>
                             <div class="textbox">인재개발처라는 홈페이지에 맞게 최대한 정보전달 위주로 제작된 홈페이지입니다. <br>
                                 제일 가운데에 디자인했으며</div>
                         </div>
                         <div class="swiper-slide"><img src="images/slide03.jpg">
-                            <h2 class="mt-2 mb-1">🖥 홍익대학교 홈페이지 시안 디자인 (2019)</h2>
+                            <a class="mobile-click d-block d-md-none"
+                                href="https://smthousand.github.io/2022cheonsumin.github.io/images/slide01.jpg"
+                                target="_blank">
+                                <p class="mobile-click-box"><span class="material-icons">
+                                        open_in_new
+                                    </span></p>
+
+                            </a>
+                            <h2 class="mt-2 mb-1">🖥 부산대학교 교원 채용 홈페이지 디자인·퍼블리싱 (2020)</h2>
                             <p class="badge badge-photoshop">Photoshop</p>
-                            <div class="textbox">인재개발처라는 홈페이지에 맞게 최대한 정보전달 위주로 제작된 홈페이지입니다. <br>
-                                제일 가운데에 디자인했으며</div>
+                            <p class="badge badge-illustrator">Illustrator</p>
+                            <p class="badge badge-html">HTML</p>
+                            <p class="badge badge-css">CSS</p>
+                            <div class="textbox">노후된 홈페이지 리뉴얼 작업을 진행하였습니다.
+                                홈페이지 내 개발된 시스템을 건들 수 없어서 최대한 리스크를 줄이기 위해 기존 홈페이지에서 HTML과 CSS와 이미지만 수정해 최대한 하고자 했습니다.
+                            </div>
+                            <p class="text-info"><span class="material-icons">
+                                    link
+                                </span> <a href="http://ppes.pusan.ac.kr/" target="_blank">http://ppes.pusan.ac.kr/</a>
+                            </p>
                         </div>
                         <div class="swiper-slide"><img src="images/slide04.jpg">
+                            <a class="mobile-click d-block d-md-none"
+                                href="https://smthousand.github.io/2022cheonsumin.github.io/images/slide01.jpg"
+                                target="_blank">
+                                <p class="mobile-click-box"><span class="material-icons">
+                                        open_in_new
+                                    </span></p>
+                            </a>
+                            <h2 class="mt-2 mb-1">🖥 동의대학교 홈페이지 시안 디자인 (2019)</h2>
+                            <p class="badge badge-photoshop">Photoshop</p>
+                            <p class="badge badge-illustrator">Illustrator</p>
+                            <p class="badge badge-html">HTML</p>
+                            <p class="badge badge-css">CSS</p>
+                            <div class="textbox">인재개발처라는 홈페이지에 맞게 최대한 정보전달 위주로 제작된 홈페이지입니다. <br>
+                                제일 가운데에 디자인했으며</div>
+                                <p class="text-info"><span class="material-icons">
+                                    link
+                                </span> <a href="https://youtu.be/q_NvzuBEyd8?t=83" target="_blank">https://youtu.be/q_NvzuBEyd8?t=83</a>
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img src="images/slide05.jpg">
+                            <a class="mobile-click d-block d-md-none"
+                                href="https://smthousand.github.io/2022cheonsumin.github.io/images/slide01.jpg"
+                                target="_blank">
+                                <p class="mobile-click-box"><span class="material-icons">
+                                        open_in_new
+                                    </span></p>
+                            </a>
                             <h2 class="mt-2 mb-1">🖥 동의대학교 홈페이지 시안 디자인 (2019)</h2>
                             <p class="badge badge-photoshop">Photoshop</p>
                             <div class="textbox">인재개발처라는 홈페이지에 맞게 최대한 정보전달 위주로 제작된 홈페이지입니다. <br>
                                 제일 가운데에 디자인했으며</div>
+                                <p class="text-info"><span class="material-icons">
+                                    link
+                                </span> <a href="http://smthousand.dothome.co.kr/tous/" target="_blank">http://smthousand.dothome.co.kr/tous/</a>
+                            </p>
                         </div>
 
                     </div>
