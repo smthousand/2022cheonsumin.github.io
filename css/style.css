@@ -7,65 +7,16 @@
     linear-gradient(127deg, rgba(242, 127, 70, 1), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(255, 40, 18, 1), rgba(0, 0, 255, 0) 70.71%);
 }
-/* header__animation */
+
+/* header__wavesAnimation */
 .waves {
   position: relative;
   width: 100%;
   height: 200px;
 }
 
-.parallax>use {
-  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-}
-
-.parallax>use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-
-.parallax>use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-
-.parallax>use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-
-.parallax>use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes move-forever 
-{
-  0% {transform: translate3d(-90px, 0, 0);}
-  100% {transform: translate3d(85px, 0, 0);}
-}
-@keyframes mainShow {
-  0% {
-    opacity: 0;
-    transform: translateY(30px); scale: (0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: transform: translateY(0); scale: (1);
-    transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
-    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
-    
-  }
-}
 
 /* header__contact */
-.main__title h2 {animation: mainShow 0.5s;animation-delay: 0s;}
-.main__title h3 {animation: mainShow 0.5s;animation-delay: 0.1s;animation-fill-mode:both;}
-.main__title .textbox {animation: mainShow 0.5s;animation-delay: 0.2s;animation-fill-mode:both;}
-.main__title .info {animation: mainShow 0.5s;animation-delay: 0.3s;animation-fill-mode:both;}
-
-.main__history-card, .main__license-list, .main__skills-badge, .swiper {animation: mainShow 0.5s;animation-delay: 0.6s;animation-fill-mode:both;}
-
-
 .header__contact {
   margin-top: -100px;
 }
@@ -79,14 +30,11 @@
   right: 0;
   bottom: 0;
 }
-.header__contact-btn .btn-primary:hover .header__icons {transform: translate3d(90px, 0, 0);}
+
 .header__icons {
   font-size: 13px;
-  transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
-  transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
-  -webkit-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
-  -webkit-transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
 }
+
 /* main */
 .textbox {
   padding: 15px 15px 15px 18px;
@@ -97,6 +45,7 @@
 
 /* history */
 .main__history .row {
+  display: -ms-grid;
   grid-row-gap: 20px;
 }
 
@@ -105,6 +54,10 @@
   border: 1px solid #707070;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
+/*.main__history-card:hover {
+  transform: rotate(3deg);
+}*/
 
 .main__history-card>h3 {
   padding: 8px 15px;
@@ -147,6 +100,10 @@ li {
   margin: 0 3px 6px 3px;
 }
 
+.badge:hover {
+  cursor: pointer;
+}
+
 .badge-photoshop {
   color: #2550C7;
   background-color: #F2F4F9;
@@ -172,6 +129,11 @@ li {
   background-color: #F9F8F2;
 }
 
+.badge-jquery {
+  color: #2566c7;
+  background-color: #f2f3f9;
+}
+
 .badge-react {
   /*color: #25C7C7;
   background-color: #F2F9F9;*/
@@ -191,18 +153,26 @@ li {
   background-color: #F7F2F9;
 }
 
-
 .badge-excel {
   color: #30C725;
   background-color: #F2F9F2;
 }
 
-
-/* project */
-.mobile {
+.badge-photoshop strong,
+.badge-illustrator strong,
+.badge-html strong,
+.badge-css strong,
+.badge-javascript strong,
+.badge-jquery strong,
+.badge-react strong,
+.badge-nodejs strong,
+.badge-bootstrap strong,
+.badge-excel strong {
   display: none;
 }
 
+
+/* project */
 .swiper {
   width: 100%;
   height: 100%;
@@ -218,21 +188,20 @@ li {
   display: relative;
 }
 
-.mobile-click {
-  position: absolute;
-  top: 0;
-  right: 0;
+
+
+.new-tap:hover,
+.new-tap:active {
   color: #fff;
+  background-color: rgb(0, 0, 0);
+  border-radius: 0 0 20px 20px;
 }
 
-.mobile-click:hover,
-.mobile-click:active {
-  color: #fff;
-}
+.new-tap-box {
+  background: rgb(0, 0, 0, .4);
+  padding: 9px 37px;
+  border-radius: 0 0 20px 20px;
 
-.mobile-click-box {
-  background: rgb(0 0 0 / 50%);
-  padding: 12px 20px;
 }
 
 .swiper-button-next {
@@ -243,21 +212,6 @@ li {
   background: url(../images/arrow-left-thin.svg) no-repeat center;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  width: 68px;
-  height: 86px;
-  background-size: 40px;
-  background-color: rgb(255, 255, 255, .4);
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
 
 
 /* 기존 버튼 삭제 */
@@ -286,9 +240,19 @@ footer p {
 }
 
 /* common */
-h1 {font-size: 2.5em;font-weight: bold;}
-h2 {font-size: 1.6em;font-weight: bold;}
-h3 {font-size: 1.25em;}
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25em;
+}
 
 /*  */
 .text-info span {
@@ -299,9 +263,18 @@ h3 {font-size: 1.25em;}
   margin-left: 20px;
 }
 
-strong {font-weight: bold;}
-.text-info a {color: #5d6c76;}
-.text-info a:hover, text-info a:active {color: #5d6c76;}
+strong {
+  font-weight: bold;
+}
+
+.text-info a {
+  color: #5d6c76;
+}
+
+.text-info a:hover,
+text-info a:active {
+  color: #5d6c76;
+}
 
 /* 반응형 */
 /* mobile */
